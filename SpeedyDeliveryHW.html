@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Speedy Delivery</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/speedyForm.js"></script>
+</head>
+<body onLoad="updatePage()">
+<form id='myForm' method="post">
+    <div class="head">Speed Of Delivery:</div>
+    <div id="delivery"></div>
+    <div class="head"> Package  Size:</div>
+    <div id="pSize">
+        <select id="mySize" name="pSize"  size="3">
+        </select>
+    </div>
+    <div class="head">Destination:</div>
+    <div>
+        <select id="destination" name="zone"  size="3">
+        </select>
+    </div>
+    <div class="head">Options:</div>
+    <div id="options">
+    </div>
+    <br />
+    <input id="button" type="button" onclick="createQuote();" value="Create Quote">
+</form>
+<span id="results"> Results here</span>
+</body>
+</html>
